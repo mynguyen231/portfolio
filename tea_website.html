@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tea website</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/flexslider.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/jquery.flexslider-min.js"></script>
+		<script>
+			$(window).on('load', function() {
+				$('.flexslider').flexslider({
+					directionNav: true,
+					controlNav: true
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<section class="header">
+			<div class="bar"></div>
+			<p>NGUYEN Thoai My - Tea website<p>
+			<nav>
+				<a href="index.html"><i class="fas fa-arrow-alt-circle-left"></i></a>
+			</nav>
+			<div id="clear"></div>
+			<div class="bar"></div>
+		</section>
+		<section class="main">
+			<p>In this project, we built the interface in the website mainly with HTML and CSS. The project includes the main page, the product information page, and the founder information page. A few visuals are shown below. </p>
+			<section id="slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li><img src="images/portfolio_1.jpg"></li>
+						<li><img src="images/tea_1.jpg"></li>
+					</ul>
+				</div>
+			</section>
+		</section>
+		<footer>
+			<a href="https://www.linkedin.com/in/nguyen-thoai-my-5156b5150/"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://www.facebook.com/luynjolie.nguyen"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/luynjolie_nguyen/"><i class="fab fa-instagram"></i></a>
+			<a href="https://codepen.io/"><i class="fab fa-codepen"></i></a>
+			<p>NGUYEN Thoai My <i class="far fa-copyright"></i> 2018</p>
+		</footer>
+	</body>
+</html>

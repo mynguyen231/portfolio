@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<!--CSS-->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!--Javascript-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+		<link rel="stylesheet" href="js/index.js">
+	</head>
+	<body>
+		<!--HEADER-->
+		<header>
+			<section id="home">
+				<nav>
+					<a href="#home"><i class="fas fa-home"></i> HOME</a>
+					<a href="#aboutme"><i class="fas fa-user"></i> ABOUT ME</a>
+					<a href="#skills"><i class="fas fa-pen-nib"></i> SKILLS</a>
+					<a href="#portfolio"><i class="fas fa-book-open"></i> PORTFOLIO</a>
+					<a href="#contact"><i class="fas fa-address-card"></i> CONTACT</a>
+				</nav>
+				<div id="presentation">
+					<p>Hello, I'm NGUYEN Thoai My
+					<br>
+					I'm a full stack web developper</p>
+					<a href="#portfolio">View my portfolio <i class="fas fa-arrow-right"></i></a>
+				</div>
+			</section>
+		</header>
+		<section id="contenu">
+			<section id="aboutme">
+				<div class="contain">
+					<h1>About me...</h1>
+					<div id="me">
+						<img src="images/portrait2.jpg" alt="portrait de My">
+						<h2>Who am I?</h2>
+						<p>I'm a Full Stack Developer in France. In addition, I have a great passion for designing user interface with HTML, CSS and Javascript. As a web developer, I want to use my technical competences along with my taste of art for making special things to create the best products. </p>
+					</div>
+					<div id="education">
+						<h2>Education</h2>
+						<p class="paragraphe">2018: 3WA ACADEMY - Paris <br> - Integrator developer training in web application development <br> - Title RNCP level III (BAC + 2)</p>
+						<p class="paragraphe">2015-2017: University of Western Brittany, France <br> - Master 2 Financial Engineering </p>
+						<p class="paragraphe">2011-2015: University of Economics in Da Nang, Viet Nam <br> - Finance and Banking License </p>
+					</div>
+				</div>
+			</section>
+			<section id="skills">
+				<div class="contain">
+					<h1>Skills</h1>
+					<p>My expertise is front-end development and everything related with this side of web (HTML, CSS, JS, coding layouts...) Moreover, I can work as a full-stack web developper (PHP and open source CMS like : Wordpress)
+					<p>Please check my chart below for more information.</p>
+					<canvas id="bar-chart-grouped" width="700" height="400"></canvas>
+				<script>	
+				new Chart(document.getElementById("bar-chart-grouped"), {
+    				type: 'bar',
+   					data: {
+      					labels: ["HTML", "CSS", "PHP", "Javascript", "WordPress", "mySQL"],
+      					datasets: [
+        					{	label: "my skills",
+         						backgroundColor: "#f2b632",
+          						data: [95,90,85,86,75,82]
+        					}, 
+      					]
+    				},
+   				});
+				</script>
+				</div>
+			</section>
+			<section id="portfolio">
+				<h1>Portfolio</h1>
+				<div id="groupe1" class="flex">
+					<article class="article">
+						<figure class="figure"><img src="images/portfolio_1.jpg" alt="Portfolio 1">
+						<figcaption><h3>Read more</h3></figcaption>
+						<a href="tea_website.html"></a></figure>
+						<p>Tea website</p>
+					</article>
+					<article class="article">
+						<figure class="figure"><img src="images/portfolio_2.png" alt="Portfolio 2">
+						<figcaption><h3>Read more</h3></figcaption>
+						<a href="moto_website.html"></a></figure>
+						<p>Moto website</p>
+					</article>
+					<article class="article">
+						<figure class="figure"><img src="images/portfolio_3.png" alt="Portfolio 3">
+						<figcaption><h3>Read more</h3></figcaption>
+						<a href="images_sliding.html"></a></figure>
+						<p>Images sliding</p>
+					</article>
+				</div>
+				<div id="groupe2" class="flex">
+					<article class="article">
+						<figure class="figure"><img src="images/portfolio_4.png" alt="Portfolio 4">
+						<figcaption><h3>Read more</h3></figcaption>
+						<a href="IT_website.html"></a></figure>
+						<p>IT website</p>
+					</article>
+					<article class="article">
+						<figure class="figure"><img src="images/portfolio_5.png" alt="Portfolio 5">
+						<figcaption><h3>Read more</h3></figcaption>
+						<a href="wordpress.html"></a></figure>
+						<p>Wordpress</p>
+					</article>
+					<article class="article">
+						<figure class="figure"><img src="images/portfolio_6.jpg" alt="Portfolio 6">
+						<figcaption><h3>Read more</h3></figcaption>
+						<a href="restaurant.html"></a></figure>
+						<p>Restaurant project</p>
+					</article>
+				</div>
+			</section>
+			<section id="contact">
+				<div id="contact-inside">
+					<h1>Contact me</h1>
+					<p>If you have any questions, please don't hesitate to contact me using the form below...</p>
+					<form action="add_message.php" method="POST">
+						<input type="text" name="name" id="name" placeholder="Name">
+						<input type="text" name="email" id="email" placeholder="E-mail">
+						<textarea name="message" rows="1" placeholder="Your message"></textarea>
+						<button type="submit" name="button">Submit</button>
+					</form>
+				</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20997.544048374813!2d2.4922613945797734!3d48.86406417441521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6126495023e8b%3A0x40b82c3688b3b50!2sNeuilly-Plaisance!5e0!3m2!1svi!2sfr!4v1538059940063" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</section>
+		</section>
+		<footer>
+			<a href="https://www.linkedin.com/in/nguyen-thoai-my-5156b5150/"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://www.facebook.com/luynjolie.nguyen"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/luynjolie_nguyen/"><i class="fab fa-instagram"></i></a>
+			<a href="https://codepen.io/"><i class="fab fa-codepen"></i></a>
+			<p>NGUYEN Thoai My <i class="far fa-copyright"></i> 2018</p>
+		</footer>
+	</body>
+</html>

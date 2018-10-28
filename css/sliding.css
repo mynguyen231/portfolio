@@ -1,0 +1,163 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Roboto Slab';
+    background-color: #b5b5b7;
+}
+.header {
+    background-color: #252839;
+    font-family: "Pacifico";
+    font-size: 2em;
+    color: #f2b632;
+    margin-top: 100px;
+    text-align: center;
+}
+.header p {
+    float: left;
+    padding: 15px;
+}
+.header nav {
+    float: right;
+    padding: 50px 0;
+}
+.header a
+{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding-right: 20px;
+}
+.header a:hover
+{
+    color: #f2b632;
+    -webkit-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+}
+#clear {
+    clear: both;
+}
+.bar {
+    background-image: url(../images/ribbon_2.png);
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+}
+
+#main {
+    margin: 0 auto;
+    width: 80%;
+}
+#main a {
+    color: #677077;
+    text-decoration: none;
+    transition: text-shadow 0.25s;
+}
+#main a:hover
+{
+    text-shadow: 0 0 4px grey;
+}
+
+button {
+    background-color: #f2b632;
+}
+h1
+{
+    color: #252839;
+    letter-spacing: 0.1em;
+}
+
+.hide
+{
+    display: none;
+}
+
+.slider
+{
+    -webkit-backface-visibility: hidden; /* obligatoire pour éviter l'effet de crénelage sous Chrome */
+    text-align: center;
+    transform: rotate(-3deg);
+    transform-origin: 50% 50%;
+    margin-top: 100px;
+}
+.slider figcaption
+{
+    color: #252839;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 0 0 4px grey;
+}
+.slider img
+{
+    background-color: white;
+    padding: 1em;
+    border-radius: 6px;
+    box-shadow: 0 0 8px black;
+}
+
+.toolbar ul
+{
+    /* structure */
+    padding-left: 0;
+
+    /* presentation */
+    list-style-type: none;
+    text-align: center;
+}
+.toolbar ul li
+{
+    display: inline-block;
+}
+.toolbar ul li + li
+{
+    margin-left: 1em;
+}
+footer {
+    margin-top: 200px;
+    background-color: #677077;
+    text-align: center;
+    padding: 80px;
+    background: -moz-linear-gradient(120deg, #677077 0%, #677077 50%, #252839 50%, #252839 100%);
+    background: -webkit-linear-gradient(120deg, #677077 0%, #677077 50%, #252839 50%, #252839 100%);
+    background: linear-gradient(120deg, #677077 0%, #677077 50%, #252839 50%, #252839 100%);
+}
+footer a {
+    color: #252839;
+}
+.fab {
+    font-size: 25px;
+    border: none;
+    background-color: #f2b632;
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+footer i:hover {
+    background-color: white;
+    -webkit-animation: bounce 0.35s ease infinite alternate;
+            animation: bounce 0.35s ease infinite alternate;
+}
+@-webkit-keyframes bounce{
+    from{
+        -webkit-transform: translateY(0);
+        transform :translateY(0);
+    }
+    to{
+        -webkit-transform: translateY(-20px);
+        transform :translateY(-20px);
+    }
+}
+@keyframes bounce{
+    from{
+        -webkit-transform: translateY(0);
+        transform :translateY(0);
+    }
+    to{
+        -webkit-transform: translateY(-20px);
+        transform :translateY(-20px);
+    }
+}
